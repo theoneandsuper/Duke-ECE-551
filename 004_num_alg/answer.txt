@@ -1,0 +1,1 @@
+Looping from i =  1 to i = 2N + 2 (inclusive),  each time printing out 3N + 2(i - 1).

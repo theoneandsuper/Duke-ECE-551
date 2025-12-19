@@ -1,0 +1,126 @@
+--------------------------------------------------------
+For this assignment, we will be trying out a way for
+you to get extra feedback from Sense, which uses
+assignment-specific AI models to give students feedback.
+
+At any point, you can run the command
+
+sense-send
+
+This will send your algorithm to Sense which will give
+you feedback using the AI model they built for this problem.
+The command should print out a link that you can paste into your browser
+to view the feedback.
+
+If you want to update your code based on the feedback you receive,
+you can do one of two things:
+  1.  Edit answers.txt on the MLP, then run sense-send again to
+      send it to them again.
+  2.  Edit on Sense's website, then run
+      sense-get
+      to download the file back from their site to the MLP.
+
+The feedback they give can be useful to help you get unstuck if you
+are having trouble, but it can also be useful to help you improve
+your code even once it is working.  We recommend trying sense-send
+if you are having problems, and then also once you are passing
+the assignment to see if it has recommendations on how to improve.
+
+Also, in case you are wondering....  We send your code to Sense, but
+do not send your identity. We instead send a unique identifier that
+looks something like this (you'll see yours in the link you get):
+
+da39a3ee5e6b4b0d3255bfef95601890afd80709
+
+which Drew can match to your identity, but nobody else can.  Of course,
+if you put identifying information in your submission, that will be sent,
+but there is no reason for you to do so.
+
+--------------------------------------------------------
+For this problem, you will be writing a "retirement savings" calculator.
+ We'll remove the effects of inflation by keeping everything in 
+ "today's dollars" and using a "Rate of return" that is in terms of
+ "more than inflation."
+ 
+ 1. Create a file called "retirement.c".  Include the usual header
+    files (stdlib.h and stdio.h) at the top.
+
+ 2. We're going to model both savings (while working) and expenditure
+    (while retired).  It turns out that both of these require the
+    same basic information, so we will make a struct to represent that.
+    Declare a struct _retire_info which has three fields: 
+       (1) an int called "months" for the number of months it is applicable to, 
+       (2) a double called "contribution" for how many dollars
+           are contributed (or spent if negative) from the account per month 
+       (3) a double called "rate_of_return" for the rate of returns 
+           (which we will assume to be "after inflation").  
+
+    After you have declared this struct, use typedef to make "retire_info"
+    another name for this struct.
+ 
+ 3. Write the function 
+      void retirement (int startAge,   //in months
+                       double initial, //initial savings in dollars
+                       retire_info working, //info about working
+                       retire_info retired) //info about being retired
+
+   This function should perform two tasks (which are similar---look
+   for a chance to abstract something out into a function!).
+  
+   First, it should compute your retirement account balance each 
+   month while you are working.  To do this, you need to calculate
+   the account balance increase from returns (balance * rate of return),
+   and add that to the current balance.  You then need to add the
+   monthly contribution to the balance.
+   For example, if you have $1,000 in the account, earn a 0.5% rate of
+   return per month, and contribute $100 per month, you would
+   compute 1000 * 0.005 = $5 in interest earned.  You would then
+   add this plus the monthly contribution to the balance to end up
+   with $1105 in the account at the end of the month.
+
+   At the start of each month (before the balance changes), you should
+   print out the current balance with the following format:
+    "Age %3d month %2d you have $%.2f\n"
+   The first two format conversions are the savers age in years and months.
+   The third format conversion is the account balance
+   This calculation goes on for the number of months specified 
+   in the "working" retire_info structure.  
+
+ 
+   Second, you should perform a very similar calculation for each
+   month of retirment.  The difference here is that you will use the
+   information in the "retired" retire_info structure instead
+   of the information in the "working" structure.  As with
+   working, you should print out the same information as before.
+
+   [Hint: since you are performing a very similar computation,
+    think about how you can abstract that part out into a function,
+    and re-use it, rather than re-writing it]  
+
+ 4. Write a main function which computes the retirement assuming
+     Working:
+     --------
+      Months: 489
+      Per Month Savings: $1000
+      Rate of Return:  4.5% per year ( 0.045/12 per month) 
+                       [above inflation]
+    Retired:
+    --------
+      Months: 384
+      Per Month Spending: -4000
+      Rate of Return: 1% per year ( 0.01/12 per month) 
+                      [above inflation]
+    Starting conditions:
+    -------------------
+       Age: 327 months (27 years, 3 months)
+       Savings: $21,345
+  5. Compile your code (we provided a Makefile) and test
+     it (we provided the output: retirement_ans.txt).
+
+  6. Submit retirement.c
+
+
+     
+
+
+  

@@ -1,0 +1,11 @@
+Grading at 09/24/2025:00:40:03.184714
+For commit ID a9cffba7c28b15b00e655a028e1e91f4d4975b25
+Grading at Tue Sep 23 08:40:03 PM EDT 2025
+Attempting to compile test.c
+cc -Wall -Wextra -std=c99 -o test test.c
+rm -f test
+compiled
+Your file matched the expected output
+Your output matched what we expected
+
+Overall Grade: A

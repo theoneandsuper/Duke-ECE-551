@@ -1,0 +1,21 @@
+Grading at 09/08/2025:02:50:39.073238
+For commit ID ea23a0d0b972abeb855fceead47e75c92d280585
+Grading at Sun Sep  7 10:50:38 PM EDT 2025
+checking all_bch.txt
+Your file matched the expected output
+checking all_bread.txt
+Your file matched the expected output
+checking all_cheeses.txt
+Your file matched the expected output
+checking bch_8.txt
+Your file matched the expected output
+checking first_a_apples.txt
+Your file matched the expected output
+checking last_a_apples.txt
+Your file matched the expected output
+checking one_each.txt
+Your file matched the expected output
+checking sorted_fruit.txt
+Your file matched the expected output
+
+Overall Grade: PASSED

@@ -1,0 +1,10 @@
+Grading at 09/26/2025:02:30:06.002627
+For commit ID 42e3dab163aa9a397a9413b18a8224ea8a6525f3
+Grading at Thu Sep 25 10:30:05 PM EDT 2025
+Attempting to compile test.c
+gcc -o test -std=gnu99 -Wall -Werror test.c
+compiled
+Your file matched the expected output
+Your output matched what we expected
+
+Overall Grade: A

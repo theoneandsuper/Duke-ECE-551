@@ -1,0 +1,7 @@
+0:Earth:Venus:200:5:12000
+36:Earth:Mars:200:5:4800
+210:Jupiter:Neptune:1003:7:3000
+700:Pluto:Saturn:2341:5:3291
+-300:Pluto:Saturn:2341:5:200
+-1000:Testing:Testing1:-650:5:-2000
+-1000:Testing:Testing1:-650:15:-2000

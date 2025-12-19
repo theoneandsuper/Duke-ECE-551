@@ -1,0 +1,36 @@
+Grading at 10/31/2025:17:46:51.795417
+For commit ID 0635e79e758f1258d3fcc40d2b03f0cb9c01dd2f
+Grading at Fri Oct 31 01:46:19 PM EDT 2025
+Looking for malloc in your files
+No uses found (good).
+Looking for free in your files
+No uses found (good).
+Looking for FILE in your files
+No uses found (good).
+Looking for realloc in your files
+No uses found (good).
+Looking for qsort in your files
+No uses found (good).
+Looking for printf in your files
+No uses found (good).
+Attempting to compile with make
+g++ -o sortLines -pedantic -Wall -Werror sortLines.cpp
+Using sortLines..
+#################################################
+testcase1:
+testcase1 passed, your program successfully indicated a failure
+valgrind was clean
+#################################################
+testcase2:
+Your output is correct
+valgrind was clean
+#################################################
+testcase3:
+Your output is correct
+valgrind was clean
+#################################################
+testcase4:
+Your output is correct
+valgrind was clean
+
+Overall Grade: A

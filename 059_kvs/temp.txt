@@ -1,0 +1,13 @@
+Printing all keys
+
+apple = red
+banana = yellow
+orange = orange
+grapes = purple
+carrot = orange
+eggplant = purple
+lookupValue('banana')=yellow
+lookupValue('grapes')=purple
+lookupValue('cantaloupe')=(null)
+lookupValue('lettuce')=(null)
+lookupValue('orange')=orange

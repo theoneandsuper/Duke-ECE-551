@@ -1,0 +1,17 @@
+Grading at 10/01/2025:06:19:38.159410
+For commit ID ca102d7047a58bbe00b174015d4306f18adfbd79
+Grading at Wed Oct  1 02:19:33 AM EDT 2025
+Attempting to compile breaker.c 
+gcc -o breaker -std=gnu99 -Wall -Werror breaker.c
+testcase1 passed
+#################################################
+testcase2:
+testcase2 passed
+#################################################
+testcase3:
+testcase3 passed
+#################################################
+testcase4:
+testcase4 passed
+
+Overall Grade: A

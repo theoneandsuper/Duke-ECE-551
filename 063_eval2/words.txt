@@ -1,0 +1,9 @@
+animal:dragon
+animal:walrus
+place:cave
+adjective:peculiar
+adjective:scary
+adjective:peaceful
+people:I：：
+verb: s fail0ef
+动词: 草
